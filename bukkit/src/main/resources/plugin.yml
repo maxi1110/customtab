@@ -1,0 +1,61 @@
+name: TabList
+main: hu.montlikadani.tablist.TabList
+version: 5.6.4
+author: montlikadani
+description: An ultimate animated tablist
+softdepend:
+- Vault
+- LuckPerms
+- PermissionsEx
+- CMI
+- Essentials
+- SuperVanish
+- PremiumVanish
+- StaffFacilities
+- PlaceholderAPI
+- Multiverse-Core # Load this plugin before tablist to prevent issues
+- ProtocolLib
+api-version: 1.13
+# DO NOT EDIT ANYTHING ABOVE THIS LINE!
+
+commands:
+  tablist:
+    description: The main command for TabList.
+    usage: <command>
+    aliases: [tl]
+
+permissions:
+  tablist.*:
+     description: Gives access to all TabList permissions.
+     children:
+       tablist.toggle: true
+       tablist.toggle.all: true
+       tablist.groupmeta: true
+       tablist.playermeta: true
+       tablist.fakeplayers: true
+       tablist.onlinestaff: true
+       tablist.reload: true
+       tablist.help: true
+  tablist.toggle:
+    description: Gives access to use /tl toggle command.
+    default: false
+  tablist.toggle.all:
+    description: Gives access to use /tl toggle all command.
+    default: false
+  tablist.groupmeta:
+    description: Gives access to /tl group commands
+    default: false
+  tablist.playermeta:
+    description: Gives access to /tl player commands
+    default: false
+  tablist.fakeplayers:
+    description: Gives access to use fakeplayers command.
+    default: false
+  tablist.onlinestaff:
+    description: Online staffs permission
+  tablist.help:
+    description: List of available commands
+    default: false
+  tablist.reload:
+    description: Gives access to use /tl reload command.
+    default: false
